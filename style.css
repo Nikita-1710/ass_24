@@ -4,19 +4,49 @@ body{
 }
 
 .navbar{
+    padding: 5px;
+    display: flex;
     background-color: silver;
     align-items: center;
 }
 
+.heading{
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.heading:hover{
+    color: blue;
+    transition: 0.5s;
+}
+
 .menu{
     display: flex;
-    justify-content: center;
+    margin-left: 280px;
+    align-items: center;
 }
 
 .menu-item{
-    margin: 10px;
-    margin-right: 10px;
-    font-size: 18px;
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-item:hover{
+    color: red;
+    transition: 0.5s;
+}
+
+.nav-icon{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
 }
 
 .user{
@@ -24,7 +54,7 @@ body{
     align-items: center;
     justify-content: end;
     position: relative;
-    left: 400px;
+    left: 300px;
 }
 
 .user-btn{
@@ -32,4 +62,53 @@ body{
     width: 80px;
     border-radius: 30px;
     border: 1px solid black;
+    cursor: pointer;
+}
+
+.user-btn:hover{
+    background-color: black;
+    color: white;
+    height: 35px;
+    border: 2px solid white;
+    transition: 1s;
+}
+
+
+@media screen and (max-width: 500px) {
+    .heading{
+        font-size: 20px;
+    }
+
+    .menu{
+        margin-left: 35px;
+    }
+
+    .menu-text{
+        display: none;
+    }
+
+    .nav-icon:hover{
+        height: 30px;
+        width: 30px;
+    }
+
+    .user{
+        position: relative;
+        left: 25px;
+    }
+    
+    .user-btn{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+    
+}
+
+@media screen and (min-width: 769px) {
+    .nav-icon{
+        display: none;
+    }
+
 }
