@@ -4,16 +4,32 @@ body{
 }
 
 .navbar{
-    background-color: blueviolet;
-    height: 50px;
+    background-color: silver;
+    align-items: center;
 }
 
 .menu{
     display: flex;
+    justify-content: center;
 }
 
 .menu-item{
+    margin: 10px;
     margin-right: 10px;
-    font-size: 19px;
-    color: white;
+    font-size: 18px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    left: 400px;
+}
+
+.user-btn{
+    height: 30px;
+    width: 80px;
+    border-radius: 30px;
+    border: 1px solid black;
 }
