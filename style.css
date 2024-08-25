@@ -108,6 +108,7 @@ body{
     font-weight: bold;
     text-align: center;
     margin: 30px;
+    cursor: pointer;
 }
 
 .secondary-container{
@@ -137,6 +138,7 @@ body{
     width: 240px;
     padding: 10px;
     margin: 10px;
+    cursor: pointer;;
 }
 
 .card-img{
@@ -151,6 +153,32 @@ body{
     font-size: 25px;
 }
 
+.book-category{
+    margin: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.category{
+    background-color: #b3b3b3;
+    height: 50px;
+    width: 180px;
+    margin: 10px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+.category:hover{
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+    box-shadow: 2px 2px 30px 5px black;
+    transition: 1s;
+}
 
 @media screen and (max-width: 500px) {
     .heading{
@@ -190,6 +218,23 @@ body{
 
     .about-text{
         font-size: 17px;
+    }
+
+    .category{
+        background-color: #b3b3b3;
+        height: 40px;
+        width: 170px;
+        margin: 5px 10px;
+        border-radius: 30px;
+        font-size: 14px;  
+    }
+
+    .category:hover{
+        background-color: black;
+        color: white;
+        border-radius: 40px;
+        box-shadow: 2px 2px 30px 5px black;
+        transition: 1s;
     }
 }
 
