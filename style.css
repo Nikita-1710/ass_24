@@ -104,6 +104,7 @@ body{
 }
 
 .about-us{
+    color: #60609f;
     font-size: 30px;
     font-weight: bold;
     text-align: center;
@@ -166,6 +167,7 @@ body{
     height: 50px;
     width: 180px;
     margin: 10px 15px;
+    margin-bottom: 20px;
     border-radius: 30px;
     cursor: pointer;
     font-size: 14px;
@@ -178,6 +180,60 @@ body{
     border-radius: 40px;
     box-shadow: 2px 2px 30px 5px black;
     transition: 1s;
+}
+
+/* footer */
+
+.footer {
+    padding: 5px;
+    background-color: #b3b3b3;
+    color: black;
+    max-height: 1000px;
+    width: 100%;
+}
+  
+.footer-content {
+    color: black;
+    width: 90%;
+    margin: auto;
+}
+
+.footer-heading{
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer-heading:hover{
+    color: blue;
+    transition: 0.5s;
+}
+  
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+  
+.footer-container a {
+    text-decoration: none;
+}
+  
+.footer-container a:hover {
+    border-bottom: 1px solid #971717;
+}
+
+.footer-container p {
+    color: black;
+}
+  
+.footer-container h4 {
+    font-size: 20px;
+}
+  
+footer {
+    text-align: center;
+    margin-bottom: 0px;
 }
 
 @media screen and (max-width: 500px) {
@@ -196,6 +252,7 @@ body{
     .nav-icon:hover{
         height: 30px;
         width: 30px;
+        transition: 1s;
     }
 
     .user{
@@ -236,10 +293,54 @@ body{
         box-shadow: 2px 2px 30px 5px black;
         transition: 1s;
     }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+      }
 }
 
 @media screen and (min-width: 501px) and (max-width: 768px) {
+    .heading{
+        font-size: 20px;
+    }
+
+    .menu{
+        margin-left: 100px;
+    }
+
+    .menu-text{
+        display: none;
+    }
+
+    .menu-item{
+        margin-right: 30px;
+    }
+
+    .nav-icon:hover{
+        height: 40px;
+        width: 40px;
+        transition: 1s;
+    }
+
+    .user{
+        position: relative;
+        left: 100px;
+    }
     
+    .user-btn{
+        display: none;
+    }
+
+    .image{
+        height: 500px;
+        width: 700px;
+    }
+
+    .about-us{
+        margin-top: 120px;
+    }
 }
 
 @media screen and (min-width: 769px) {
